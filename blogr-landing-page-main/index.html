@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Overpass?preview.text_type=custom">
+  <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link  type="text/javascript" href="index.js">
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+	<header >
+    <img src="images/intro.svg" alt="fon" id="intro">
+    <div class="all-n">
+    <div id="nav-b">
+      <div class="img">
+    <img src="images/logo.svg"  alt="logo" id="logo">
+    </div>
+    <div class="topnav">
+      <ul id="nav-1">
+        <li class="dropbtn"><div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Product
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+    <a href="#">Overview</a>
+    <a href="#">Pricing</a>
+    <a href="#">Market place</a>
+    <a href="#">Features</a>
+    <a href="#">Integrations</a>
+  </div></div></li>
+        <li class="dropbtn"> <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Company</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">About</a>
+    <a href="#">Team</a>
+    <a href="#">Block</a>
+    <a href="#">Career</a>
+  </div>
+</div> 
+        <li class="dropbtn"> <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Connect</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Contact</a>
+    <a href="#">Newsletter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+</div> 
+        </li> 
+      </ul>
+        
+    </div>
+    </div>
+    <div id="sign">
+      <ul>
+        <li id="login">Login</li>
+        <li id="signup">Sign Up</li>
+      </ul>
+    </div>
+    </div>
+    <h1>A modern publishing platform</h1>
+    <p>Grow your audience and build your online brand</p>
+    <div class="btn-main">
+      <button id="start" onclick="myFunction()">Start for Free</button>
+      <button id="learn">Learn More</button>
+    </div>
+    </header>
+    <section class="second">
+    	<div class="text">
+    		<h2>Designed for the Future</h2>
+	    	<h3>Introducing an extensible editor</h3>
+		    <p> Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+		    <h3>Robust content management</h3>
+		    <p> Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+		</div>
+		<div class="illustration">
+			<img src="images/editor.svg" width="750">
+		</div>
+
+    </section>
+    <section class="third">
+    	<img src="images/circle.svg" alt="circle" id="circle">
+    	<div class="illustration">
+    		<img src="images/phones.svg" alt="phones" id="phones">
+    	</div>
+    	<div class="text">
+	    	<h3>State of the Art Infrastructure</h3>
+			<p> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive..</p>
+		</div>
+    	
+    </section>
+     <section class="fourth">
+     	<div class="illustration4">
+			<img src="images/laptop.svg" width="750">
+		</div>
+    	<div class="text">
+	    	<h3>Free, open, simple</h3>
+		    <p> Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+		    <h3>Powerful tooling</h3>
+		    <p> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+		</div>
+		
+    </section>
+    <section class="footer">
+    	<img src="images/logo.svg" alt="logo" width="100" height="40">
+    	<table>
+    		<tr>
+    			<th>Product</th>
+    			<th>Company</th>
+    			<th>Connect</th>
+    		</tr>
+    		<tr>
+    			<td>Overview</td>
+    			<td>About</td>
+    			<td>Contact</td>
+    		</tr>
+    		<tr>
+    			<td>Pricing</td>
+    			<td>Team</td>
+    			<td>Newsletter</td>
+    		</tr>
+    		<tr>
+    			<td>Market Place</td>
+    			<td>Blog</td>
+    			<td>LinkedIn</td>
+    		</tr>
+    		<tr>
+    			<td>Features</td>
+    			<td>Careers</td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td>Intedrations</td>
+    		</tr>
+    	</table>
+    </section>
+    <script type="text/javascript">
+           var elem = document.getElementById('start');
+    elem.onmouseover = function () {
+        elem.style.background = "white";
+        elem.style.color = "black";
+
+    };
+    elem.onmouseleave = function () {
+      elem.style.background = "none";
+        elem.style.color = "white";
+    }
+     var elem2 = document.getElementById('learn');
+    elem2.onmouseover = function () {
+        elem2.style.background = "white";
+        elem2.style.color = "black";
+
+    };
+    elem2.onmouseleave = function () {
+      elem2.style.background = "none";
+        elem2.style.color = "white";
+    }
+    var elem3 = document.getElementById('signup');
+    elem3.onmouseover = function () {
+        elem3.style.background = "white";
+        elem3.style.color = "black";
+
+    };
+    elem3.onmouseleave = function () {
+      elem3.style.background = "none";
+        elem3.style.color = "white";
+    }
+     var elem4 = document.getElementById('login');
+    elem4.onmouseover = function () {
+        elem4.style.background = "white";
+        elem4.style.color = "black";
+
+    };
+    elem4.onmouseleave = function () {
+      elem4.style.background = "none";
+        elem4.style.color = "white";
+    }
+    </script>
+    <
+<!--  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+  
+</body>
+</html>
